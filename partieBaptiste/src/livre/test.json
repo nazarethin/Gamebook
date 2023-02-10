@@ -1,0 +1,18 @@
+{
+  "prompt": "livreExemple>",
+  "sections": {
+    "1": {
+      "text": "Captain D'Val and his guards escort you to the citadel gate where a small\ncovered wagon awaits you. As soon as you clamber in, the gates are thrown open\nand you are hurried away through the crowded streets of Holmgard. After a short\nbut uncomfortable journey, the wagon stops and the driver pulls open the canvas\nflap.\n\n\"This is the quay, my lord. There is your ship, the Green Sceptre.\" As he speaks\nthe driver points across the quay to a sleek trade caravel anchored near to the\nharbour wall.\n\n\"The first mate's name is Ronan. You will find him waiting for you across the\nsquare at the Good Cheer Inn.\" Then the driver bids you farewell and quickly\ndisappears into the teeming crowds.\n\nYou reach the inn to find the front doors locked and the window shutters barred.\nYou are trying to decide what to do next when a hand grabs your arm and you are\npulled into the darkness.\n\nhttp://www.projectaon.org/en/xhtml/lw/02fotw//small1.png[Illustration]",
+      "choices": [
+        {
+          "text": "If you wish to draw your weapon and attack your unknown assailant, turn to 273.",
+          "section": "273"
+        },
+        {
+          "text": "If you wish to try to pull free of his grasp, turn to 160.",
+          "section": "160"
+        }
+      ]
+    }
+  }
+}
