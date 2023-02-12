@@ -3,10 +3,10 @@ package livre;
 import java.util.ArrayList;
 
 public class Page {
-    protected int section;
-    protected String texte;
-    protected ArrayList<Choix> choix;
-    protected boolean goodEnding;
+    private int section;
+    private String texte;
+    private ArrayList<Choix> choix;
+    private boolean goodEnding;
 
     public Page(int section, String texte) {
         this.section = section;

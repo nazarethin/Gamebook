@@ -91,13 +91,46 @@ public class LecteurJson {
                     } 
                 }
             }
-        Page pageintro = new Page(0,intro);
+        Page pageintro = new Page(-1,intro);
         return pageintro;
         }
-        else{      System.out.println("Pas d'intro");
+        else{      System.out.println("Pas d'intro ou dans un format invalide");
             String intituleVide = "";
-            Page pageintro = new Page(0, intituleVide);
+            Page pageintro = new Page(-1, intituleVide);
             return pageintro;
+        } 
+    }
+
+    public Page createSetup (){
+        if(myObject.has("setup")&& myObject.get("setup")instanceof JSONObject){
+            JSONObject setup = myObject.getJSONObject("setup");
+            JSONArray setupSequence = setup.getJSONArray("sequence");
+            String setupText = "";
+            for(int i=0; i<setupSequence.length();i++){
+                JSONArray tmp = new JSONArray();
+                if(setupSequence.get(i)instanceof JSONArray){
+                    tmp = setupSequence.getJSONArray(i);
+                    for(int j = 0; j<tmp.length();j++)
+                    setupText += tmp.getString(j)+"\n";
+                }
+                else if(setupSequence.get(i)instanceof String){
+                    setupText += "\n"+setupSequence.getString(i)+"\n";
+                }  
+                else{
+                    System.out.println("Error");
+                }
+                
+            }  
+            System.out.println(setupText);
+            String intituleVide = "";
+            Page pageSetup = new Page(0, intituleVide);
+            return pageSetup;
+        }
+        else{     
+            System.out.println("Pas de 'setup' du personnage ou dans un format invalide");
+            String intituleVide = "";
+            Page pageSetup = new Page(0, intituleVide);
+            return pageSetup;
         } 
     }
 }
