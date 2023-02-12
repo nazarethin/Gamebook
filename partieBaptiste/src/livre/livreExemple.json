@@ -1,6 +1,6 @@
 {
     "prompt": "livreExemple>",
-    "intro_sequence": [
+    "intro_sequence": {
         [
             "The Story So Far...",
             "In the northern land of Sommerlund, it has been the custom for many\ncenturies to send the children of the Warrior Lords to the monastery\nof Kai. There they are taught the skills and disciplines of their\nnoble fathers."
@@ -11,7 +11,7 @@
         "After the defeat of Vashna, the Sommerswerd had been bestowed upon the\nallies of Durenor as a mark of trust and allegiance that exists\nbetween the two kingdoms. In return, King Alin of Durenor gave\nSommerlund a magnificent golden ring bearing the royal arms of\nDurenor. This ring is known as the Seal of Hammerdal. At that time,\nKing Alin vowed that if ever the shadow of the west should rise again\nto threaten Sommerlund, Durenor would come to the aid of her ally.",
         "The King has given you the Seal of Hammerdal. Your quest is to travel\nto Durenor to fetch the Sommerswerd back. But meanwhile the enemy have\nbroken through the outer defences to the capital and are preparing to\nbesiege the city wall. As Captain D\u2019Val of the King\u2019s Guard leads you\nto the Royal Armoury to equip you for your mission, the King\u2019s words\nkeep coming back to you:",
         "\u2018Forty days, Lone Wolf. We have strength to stand against them for\nonly forty days.\u2019"
-    ],
+    },
     "setup": {
         "sequence": [
             [

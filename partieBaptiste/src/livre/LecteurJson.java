@@ -1,6 +1,8 @@
 package livre;
 
 import java.io.*;
+import java.lang.reflect.Type;
+
 import org.json.*;
 import java.util.ArrayList;
 
@@ -46,7 +48,7 @@ public class LecteurJson {
         if (myChoices.length() != 0) {
             for (int i = 0; i < myChoices.length(); i++) {
                 if (!myChoices.getJSONObject(i).isNull("text")) { // pour s'assurer qu'il y a bien un texte a notre
-                                                                  // choix
+                    // choix
                     // Création de notre objet Choix
                     String texteChoix = myChoices.getJSONObject(i).getString("text");
                     String sectionChoixString = myChoices.getJSONObject(i).getString("section");
@@ -66,4 +68,36 @@ public class LecteurJson {
         return page;
     }
 
+    public Page createIntro(){
+
+        if (myObject.has("intro_sequence") && myObject.get("intro_sequence") instanceof JSONArray) {
+            JSONArray introSequence = myObject.getJSONArray("intro_sequence");
+            String intro = "";
+            for (int i = 0 ;i<introSequence.length();i++){
+                //System.out.println(introSequence.get(i)instanceof String);
+                //System.out.println(i);
+                if(introSequence.get(i)instanceof String){
+                    intro += "\n"+introSequence.getString(i)+"\n";
+                    //System.out.println("Boucle i : " +i);
+                }
+                else if (introSequence.get(i)instanceof JSONArray){
+                    //System.out.println(introSequence.get(i));
+                    JSONArray subSection = introSequence.getJSONArray(i);
+                    for (int j = 0; j<subSection.length();j++){
+                        if (subSection.get(j) instanceof String) {
+                            intro += subSection.getString(j)+"\n";
+                            //System.out.println("Boucle j :"+j);
+                        }
+                    } 
+                }
+            }
+        Page pageintro = new Page(0,intro);
+        return pageintro;
+        }
+        else{      System.out.println("Pas d'intro");
+            String intituleVide = "";
+            Page pageintro = new Page(0, intituleVide);
+            return pageintro;
+        } 
+    }
 }
