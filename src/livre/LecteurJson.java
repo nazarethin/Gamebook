@@ -6,7 +6,7 @@ import java.io.*;
 import org.json.*;
 import java.util.ArrayList;
 
-public class LecteurJson {
+public class LecteurJson extends Lecteur{
     protected String fileName;
     protected Reader myReader; // permet d'ouvrir le fichier
     protected JSONTokener myTokener; // Permet de lire son contenu
@@ -20,7 +20,7 @@ public class LecteurJson {
             this.myObject = new JSONObject(myTokener);
             this.listePage = new ArrayList<Page>();
         } catch (FileNotFoundException e) {
-            System.out.println("Erreur : Fichier non trouvé.");
+            System.out.println("Erreur : Fichier non trouvé ou chemin invalide." + fileName);
         }
     }
 
@@ -132,5 +132,13 @@ public class LecteurJson {
             Page pageSetup = new Page(0, intituleVide);
             return pageSetup;
         } 
+    }
+
+    public ArrayList<Page> getLivre(){
+        return this.listePage;
+    }
+
+    public void createLivre(){
+        System.out.println("A faire");
     }
 }

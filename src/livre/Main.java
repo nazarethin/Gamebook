@@ -1,14 +1,53 @@
 package livre;
-
+import java.io.File;
 import java.util.Scanner;
 import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
+        //CHOIX FICHIER
+        boolean isTxt = false;
+        String folderPath = "../ma_partie/books"; // chemin du dossier à vérifier
+        File folder = new File(folderPath);
 
-        String fileName = "livreExemple.json";
+        // Récupération de tous les fichiers dans le dossier
+        File[] files = folder.listFiles();
+        Lecteur monLecteur = null;
+        if (files == null || files.length == 0) {
+            System.out.println("Aucun fichier trouvé au chemin : ");
+        } else if (files.length == 1) {
+            // Si un seul fichier est trouvé, l'ouvrir directement
+            File file = files[0];
+            if (file.getName().endsWith(".txt")) {
+                System.out.println("Lecteur txt");
+                monLecteur = new LecteurTxt(folderPath + "/" + file.getName());
+                isTxt = true;
+            }
+            else {
+                System.out.println("Lecteur JSON");
+                monLecteur = new LecteurJson(folderPath + "/" + file.getName());
+            }
+        } else {
+            // Si plusieurs fichiers sont trouvés, afficher un prompt pour choisir lequel ouvrir
+            System.out.println("Plusieurs fichiers trouvés:");
+            for (int i = 0; i < files.length; i++) {
+                System.out.println((i+1) + ". " + files[i].getName());
+            }
 
-        LecteurJson monLecteur = new LecteurJson(fileName);
-        //System.out.println("monLecteur : "+monLecteur); 
+            Scanner scanner = new Scanner(System.in);
+            int selectedFileIndex = -1;
+            while (selectedFileIndex < 1 || selectedFileIndex > files.length) {
+                System.out.print("Entrez le numéro du fichier à ouvrir: ");
+                selectedFileIndex = scanner.nextInt();
+            }
+            File selectedFile = files[selectedFileIndex - 1];
+
+            if (selectedFile.getName().endsWith(".txt")) { //Lancement du bon lecteur après insertion au clavier
+                monLecteur = new LecteurTxt(folderPath + "/" + selectedFile.getName());
+            }
+            else {
+                monLecteur = new LecteurJson(folderPath + "/" + selectedFile.getName());
+            }
+        }
 
         /* ----------- Création de l'intro ---------- */
 
@@ -38,11 +77,12 @@ public class Main {
         Scanner pressEnter2 = new Scanner(System.in);
         pressEnter2.nextLine();
 
+        /* ----------- Début du jeu ---------- */
         Page maPage = monLecteur.createPage(1);
 
         System.out.println(" ----------------------------\n|    Texte de la page " + maPage.getSection() + " :"
                 + "    | \n ----------------------------\n" + " \n" + maPage.getTexte());
-
+        
         ArrayList<Choix> mesChoix = maPage.getChoix();
         if (mesChoix.size() == 0) {
             System.out.println("\n ----------------\n|      FIN ! " + "    | \n ----------------"
@@ -59,7 +99,7 @@ public class Main {
         while (mesChoix.size() != 0) {
             System.out.println("\nQuel choix faites vous ? : ");
             int choixUtilisateur = choixScanner.nextInt();
-            if(choixUtilisateur>mesChoix.size()){
+            if(choixUtilisateur>mesChoix.size() || choixUtilisateur < 1){
                 System.out.println("\nLe chiffre que vous avez entré est trop grand !");
             }else {
                 Choix choix = mesChoix.get(choixUtilisateur - 1);
@@ -72,6 +112,7 @@ public class Main {
                                 + "    | \n ----------------------------\n" + " \n" + pageSuivante.getTexte());
             }
         } 
+        
         choixScanner.close(); 
         pressEnter1.close();
         pressEnter2.close();

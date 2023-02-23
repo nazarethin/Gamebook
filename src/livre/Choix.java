@@ -10,7 +10,7 @@ public class Choix {
     }
 
     public String getIntitule() {
-        return this.intitule;
+        return this.intitule.replace("\n", " ");
     }
 
     public int getSuivant() {

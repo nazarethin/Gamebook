@@ -7,8 +7,10 @@ public abstract class Lecteur {
 
     public Lecteur() {
     }
-    // Objets servant à l'ouverture des fichiers
 
     public abstract Page createPage(int numSection);
-    // public abstract ArrayList<Page> createLivre();
+    public abstract Page createIntro();
+    public abstract Page createSetup();
+    public abstract ArrayList<Page> getLivre();
+    public abstract void createLivre();
 }
