@@ -88,7 +88,7 @@ public class LecteurTxt extends Lecteur{
     }
 
     public ArrayList<Choix> extractChoices(String section) { //Prend en argument la section sous forme de String
-        ArrayList<Choix> mesChoix = new ArrayList();
+        ArrayList<Choix> mesChoix = new ArrayList<Choix>();
         String[] phrases = section.split("[,.!?]");
         ArrayList<String> phrasesChoix = new ArrayList<String>();
         ArrayList<Integer> numsChoix = new ArrayList<Integer>();

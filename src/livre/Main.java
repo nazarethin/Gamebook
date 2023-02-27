@@ -6,14 +6,14 @@ public class Main {
     public static void main(String[] args) {
         //CHOIX FICHIER
         boolean isTxt = false;
-        String folderPath = "../ma_partie/books"; // chemin du dossier à vérifier
+        String folderPath = "books"; // chemin du dossier à vérifier
         File folder = new File(folderPath);
 
         // Récupération de tous les fichiers dans le dossier
         File[] files = folder.listFiles();
         Lecteur monLecteur = null;
         if (files == null || files.length == 0) {
-            System.out.println("Aucun fichier trouvé au chemin : ");
+            System.out.println("Aucun fichier trouvé au chemin : " + folderPath);
         } else if (files.length == 1) {
             // Si un seul fichier est trouvé, l'ouvrir directement
             File file = files[0];
