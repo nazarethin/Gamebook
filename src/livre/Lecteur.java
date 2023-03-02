@@ -10,7 +10,7 @@ public abstract class Lecteur {
 
     public abstract Page createPage(int numSection);
     public abstract Page createIntro();
-    public abstract Page createSetup();
+    public abstract Page createSetup(Personnage main);
     public abstract ArrayList<Page> getLivre();
     public abstract void createLivre();
 }

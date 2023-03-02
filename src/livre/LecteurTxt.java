@@ -3,6 +3,10 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.*;
 import java.util.regex.Pattern;
+
+import javax.print.attribute.standard.PDLOverrideSupported;
+import javax.swing.plaf.metal.MetalScrollButton;
+
 import java.util.regex.Matcher;
 
 
@@ -93,7 +97,8 @@ public class LecteurTxt extends Lecteur{
         ArrayList<String> phrasesChoix = new ArrayList<String>();
         ArrayList<Integer> numsChoix = new ArrayList<Integer>();
         for (String phrase : phrases) {
-            if (phrase.contains("rendez-vous au") || phrase.contains("Tournez la page")) {
+            if (phrase.contains("rendez-vous au") || phrase.contains("Tournez la page") || phrase.contains("Rendez-vous au")) {
+                phrase = phrase.toLowerCase();
                 phrasesChoix.add(phrase.trim());
                 Pattern pattern = Pattern.compile("rendez-vous au\\s*(\\d+)");
                 Matcher matcher = pattern.matcher(phrase);
@@ -103,11 +108,11 @@ public class LecteurTxt extends Lecteur{
                 }
             }
         }
-    for (int i = 0; i < phrasesChoix.size(); i++){
-        Choix monChoix = new Choix(phrasesChoix.get(i), numsChoix.get(i));
-        mesChoix.add(monChoix);
-        }
-    return mesChoix;
+        for (int i = 0; i < phrasesChoix.size(); i++){
+            Choix monChoix = new Choix(phrasesChoix.get(i), numsChoix.get(i));
+            mesChoix.add(monChoix);
+            }
+        return mesChoix;
     }
 
     public Page createIntro() {
@@ -132,7 +137,7 @@ public class LecteurTxt extends Lecteur{
         return pageIntro;
     }
 
-    public Page createSetup() {
+    public Page createSetup(Personnage main) {
         String intituleVide = "";
         Page pageSetup = new Page(0, intituleVide);
         return pageSetup;

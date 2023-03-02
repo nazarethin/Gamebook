@@ -101,7 +101,7 @@ public class LecteurJson extends Lecteur{
         } 
     }
 
-    public Page createSetup (){
+    public Page createSetup (Personnage main){
         if(myObject.has("setup")&& myObject.get("setup")instanceof JSONObject){
             JSONObject setup = myObject.getJSONObject("setup");
             JSONArray setupSequence = setup.getJSONArray("sequence");

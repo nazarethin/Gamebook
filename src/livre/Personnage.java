@@ -2,27 +2,20 @@ package livre;
 import java.util.ArrayList;
 
 public class Personnage {
-    protected String nom;
     protected int argent;
     protected int combatSkill;
     protected int endurance; 
+    protected int chance;
     protected ArrayList<String> kaiDisciplines;
     protected ArrayList<String> inventaire;
     
     
     public Personnage(){
-        this.nom="";
         this.argent = 0;
         this.combatSkill = 1 ;
         this.endurance = 1 ;
+        this.chance = 0;
         this.kaiDisciplines = new ArrayList<String>();
-    }
-
-    public String getNom(){
-        return this.nom;
-    }
-    public void setNom(String newNom){
-        this.nom = newNom;
     }
 
     public int getArgent(){
@@ -51,6 +44,14 @@ public class Personnage {
         this.endurance += ajout;
     }
 
+    public int getChance(){
+        return this.chance;
+    }
+
+    public void setChance(int ajout){
+        this.chance += ajout;
+    }
+
     public ArrayList<String> getKaiDisciplines(){
         return this.kaiDisciplines;
     }
@@ -77,7 +78,6 @@ public class Personnage {
 
     public String toString() {
         return
-        "Vous êtes : "+getNom()+
         "\n Or : "+getArgent()+
         "\n Combat skill :"+getCombatSkill()+
         "\n Endurance :"+getEndurance()+
