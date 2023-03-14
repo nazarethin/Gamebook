@@ -1,5 +1,7 @@
 package livre;
 import java.util.ArrayList;
+import java.util.Map;
+import java.util.HashMap;
 
 public class Personnage {
     protected int argent;
@@ -7,15 +9,16 @@ public class Personnage {
     protected int endurance; 
     protected int chance;
     protected ArrayList<String> kaiDisciplines;
-    protected ArrayList<String> inventaire;
+    protected Map<String, Integer> inventaire;
     
     
     public Personnage(){
         this.argent = 0;
-        this.combatSkill = 1 ;
-        this.endurance = 1 ;
+        this.combatSkill = 10 ;
+        this.endurance = 10 ;
         this.chance = 0;
         this.kaiDisciplines = new ArrayList<String>();
+        this.inventaire = new HashMap<>();
     }
 
     public int getArgent(){
@@ -64,16 +67,31 @@ public class Personnage {
         this.kaiDisciplines.remove(formerDisciplines);
     }
 
-    public ArrayList<String> getInventaire(){
+    public Map<String, Integer> getInventaire(){
         return this.inventaire;
     }
 
     public void addInventaire(String newObject){
-        this.inventaire.add(newObject);
+        if (inventaire.containsKey(newObject)) {
+            int ancienneQuantite = inventaire.get(newObject);
+            inventaire.put(newObject, ancienneQuantite + 1);
+        } else {
+            inventaire.put(newObject, 1);
+        }
     } 
 
-    public void removeInventaire(String formerObject){
-        this.inventaire.remove(formerObject);
+    public void removeInventaire(String formerObject, int quantite) {
+        if (inventaire.containsKey(formerObject)) {
+            int ancienneQuantite = inventaire.get(formerObject);
+            if (quantite >= ancienneQuantite) {
+                inventaire.remove(formerObject);
+            } else {
+                inventaire.put(formerObject, ancienneQuantite - quantite);
+            }
+            System.out.println(quantite + " " + formerObject + " ont été retirés de l'inventaire.");
+        } else {
+            System.out.println(formerObject + " n'est pas présent dans l'inventaire.");
+        }
     }
 
     public String toString() {
@@ -84,4 +102,29 @@ public class Personnage {
         "\n Kai Disiplines : " + getKaiDisciplines()+
         "\n Inventaire :" + getInventaire();
     };
+
+    public void changeStats(String statToChange, Integer valeur){
+        if (statToChange.equals("habilete")) {
+            setCombatSkill(valeur);
+        }
+        else if (statToChange.equals("endurance")) {
+            setEndurance(valeur);
+        }
+        else if (statToChange.equals("chance")){
+            setChance(valeur);
+        }
+        else {
+            System.out.println("La stat : \"" + statToChange + "\" de valeur : " + valeur + " n'est pas valide\n" );
+        }
+    }
+
+    public boolean containAbility(String maString) {
+        ArrayList<String> tmp = this.getKaiDisciplines();
+        for (int i = 0; i < tmp.size(); i++) {
+            if (tmp.get(i).equals(maString)) {
+                return true;
+            }
+        }
+        return false;
+    }
 }

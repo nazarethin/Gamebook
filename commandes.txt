@@ -1,2 +1,0 @@
-javac -cp lib/json.jar -d build src/livre/*.java -Xdiags:verbose		compile
-java -cp build:lib/json.jar livre.Main					execute

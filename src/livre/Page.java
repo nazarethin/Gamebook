@@ -7,11 +7,17 @@ public class Page {
     private String texte;
     private ArrayList<Choix> choix;
     private boolean goodEnding;
+    private boolean isFight;
+    private boolean modifieInventaire;
+    private boolean modifieStats;
 
     public Page(int section, String texte) {
         this.section = section;
         this.texte = texte;
         this.choix = new ArrayList<Choix>();
+        this.isFight = false;
+        this.modifieInventaire = false;
+        this.modifieStats = false;
     }
 
     public int getSection() {
@@ -40,5 +46,29 @@ public class Page {
 
     public boolean isEnding() {
         return choix.isEmpty();
+    }
+
+    public void setIsFight(boolean setter) {
+        this.isFight = setter;
+    }
+
+    public boolean isFight() {
+        return this.isFight;
+    }
+
+    public void setModifieInventaire() {
+        this.modifieInventaire = true;
+    }
+
+    public boolean modifieInventaire() {
+        return this.modifieInventaire;
+    }
+
+    public void setModifieStats() {
+        this.modifieStats = true;
+    }
+
+    public boolean modifieStats() {
+        return this.modifieStats;
     }
 }
