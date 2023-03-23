@@ -3,7 +3,7 @@
  * @author LARRIVAIN Daphne 22112005
  */
 
-package kk.gui;
+package kk.gui.components;
 
 import kk.geometrie.Point;
 

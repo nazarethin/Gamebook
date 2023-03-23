@@ -20,26 +20,40 @@ import java.lang.Math;
 
 public class VueGraphe extends JPanel implements Listener{
 	
-	private int zoom = 50;
 	private int DIM;
+	private int zoom;
+	private int taillePoint;
 	private KamadaKawai algo;
 	private ArrayList<VuePoint> vues = new ArrayList<>();
 
-
-	public VueGraphe(KamadaKawai kk){
+	public VueGraphe(KamadaKawai kk, int zoom, int taillePoint){
 		super(null);
+		this.zoom = zoom;
+		this.taillePoint = taillePoint;
 		this.algo = kk;
 		this.algo.addListener(this);		
-		this.DIM = (int) kk.getRes()*zoom;			
+		this.DIM = (int) kk.getRes()*zoom + taillePoint*3;			
 		for (Point p : kk.getPoints()){
-			VuePoint v = new VuePoint(p, 10); //DIAM FIXE
+			VuePoint v = new VuePoint(p, taillePoint);
 			this.vues.add(v);
 			this.add(v);
 			v.setBounds((int) v.x()*zoom, (int) v.y()*zoom, v.height(), v.height());
 		}	
 	}
+
+	public VueGraphe(KamadaKawai kk, int zoom){
+		this(kk, zoom, 10);
+	}
+	
+	public VueGraphe(KamadaKawai kk){
+		this(kk, 50, 10);
+	}	
 		
 	//-------------------------------------------------//
+	
+	public int getDim(){
+		return this.DIM;
+	}
 				
 	@Override
 	protected void paintComponent(Graphics g){	
