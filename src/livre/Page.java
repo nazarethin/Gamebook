@@ -71,4 +71,8 @@ public class Page {
     public boolean modifieStats() {
         return this.modifieStats;
     }
+
+    public String toString(){
+        return "" + this.getSection();
+    }
 }

@@ -1,7 +1,6 @@
 package livre;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 import java.util.Map;
 
 public abstract class Lecteur {
@@ -11,7 +10,7 @@ public abstract class Lecteur {
 
     public abstract Page createPage(int numSection);
 
-    public abstract Page createIntro();
+    public abstract String createIntro();
 
     public abstract Page createSetup(Personnage monPerso);
 

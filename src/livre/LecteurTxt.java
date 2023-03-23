@@ -5,7 +5,6 @@ import java.util.Scanner;
 import java.io.*;
 import java.util.regex.Pattern; //Utile pour la lecture du fichier txt
 import java.util.regex.Matcher;
-import java.text.Normalizer;
 import java.util.Map;
 import java.util.HashMap;
 
@@ -122,7 +121,7 @@ public class LecteurTxt extends Lecteur {
                                                                                                   // partir d'un combat
                 maPage.setIsFight(true);
                 phrasesChoix.add("Vous mourrez.");
-                numsChoix.add(-1);
+                numsChoix.add(0);
             }
 
             if (phrase.contains("Notez")) {
@@ -137,7 +136,7 @@ public class LecteurTxt extends Lecteur {
         return mesChoix;
     }
 
-    public Page createIntro() {
+    public String createIntro() {
         String intro = "";
         Scanner introScanner = new Scanner(this.fileContent);
         while (introScanner.hasNextLine()) { // Evite de boucler à l'infini dans la lecture du fichier
@@ -154,9 +153,8 @@ public class LecteurTxt extends Lecteur {
                 intro += nextNextLine + "\n";
             }
         }
-        Page pageIntro = new Page(-1, intro);
         introScanner.close();
-        return pageIntro;
+        return intro;
     }
 
     public Page createSetup(Personnage monPerso) {
@@ -189,9 +187,10 @@ public class LecteurTxt extends Lecteur {
         scanner.close();
 
         // Parcourir toute les pages pour les créer
-        for (int i = 1; i < numSect + 1; i++) {
+        for (int i = 0; i < numSect + 1 ; i++) {
             this.listePage.add(createPage(i));
         }
+        this.listePage.get(numSect).setGoodEnding(true);
     }
 
     public ArrayList<String> itemToAdd(String section, Page maPage) {

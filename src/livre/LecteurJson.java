@@ -80,7 +80,7 @@ public class LecteurJson extends Lecteur {
         return page;
     }
 
-    public Page createIntro() {
+    public String createIntro() {
 
         if (myObject.has("intro_sequence") && myObject.get("intro_sequence") instanceof JSONArray) {
             JSONArray introSequence = myObject.getJSONArray("intro_sequence");
@@ -97,17 +97,14 @@ public class LecteurJson extends Lecteur {
                     }
                 }
             }
-            Page pageintro = new Page(-1, intro);
-            return pageintro;
+            return intro;
         } else {
             System.out.println("Pas d'intro ou dans un format invalide");
-            String intituleVide = "";
-            Page pageintro = new Page(-1, intituleVide);
-            return pageintro;
+            return "";
         }
     }
 
-     public Page createSetup(Personnage monPerso) {
+    public Page createSetup(Personnage monPerso) {
         if (myObject.has("setup") && myObject.get("setup") instanceof JSONObject) {
             JSONObject setup = myObject.getJSONObject("setup");
             JSONArray setupSequence = setup.getJSONArray("sequence");
@@ -182,7 +179,6 @@ public class LecteurJson extends Lecteur {
             return pageSetup;
         }
     }
-    
 
     public ArrayList<Page> getLivre() {
         return this.listePage;
@@ -203,19 +199,15 @@ public class LecteurJson extends Lecteur {
 
     }
 
-    public ArrayList<String> itemToAdd(String section, Page maPage) { // A COMPLETER Reçoit le texte de la page et la
-                                                                      // page en question, renvoie la string de l'item à
-                                                                      // ajouter à l'inventaire
-        ArrayList<String> res = new ArrayList<String>();
+    public ArrayList<String> itemToAdd(String section, Page maPage) {
+        ArrayList<String> res = new ArrayList<String>(); // Fonction pas nécessaire car dans le livre fourni en exemple
+                                                         // il est impossible de gagner de l'équipement au cours de
+                                                         // l'aventure.
         return res;
     }
 
-    public ArrayList<Map<Integer, String>> statsToChange(String section, Page maPage) { // A COMPLETER Reçoit le texte de la page
-                                                                             // et la page en question, renvoie un
-                                                                             // couple avec la valeur du changement et
-                                                                             // la string correspondant à la stat à
-                                                                             // changer
-        ArrayList<Map<Integer, String>> result = new ArrayList<>();
-        return result;
+    public ArrayList<Map<Integer, String>> statsToChange(String section, Page maPage) { 
+        ArrayList<Map<Integer, String>> res = new ArrayList<Map<Integer, String>>();
+        return res;
     }
 }
