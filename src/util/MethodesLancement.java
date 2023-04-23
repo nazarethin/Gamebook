@@ -14,6 +14,7 @@ public class MethodesLancement extends ListenableModel {
     public Personnage mainCharacter;
     private Page pageActuelle;
     private int inputChoice;
+    private int nbChoix;
     private Menu frame;
     private EcranMenu menu;
 
@@ -24,6 +25,7 @@ public class MethodesLancement extends ListenableModel {
         this.pageActuelle = pageActuelle;
         this.format = format;
         this.inputChoice = -1;
+        this.nbChoix = 2;
 
     }
 
@@ -169,8 +171,11 @@ public class MethodesLancement extends ListenableModel {
         while (mesChoix.size() != 0) {
             maPage = createPage(numPage);
             setPageActuelle(maPage);
+            setNbChoix(maPage.getChoix().size());
             fireChange();
             createChoix(maPage);
+            System.out.println("\navant set : " + getNbChoix());
+            System.out.println("\napres set : " + getNbChoix());
             if (maPage.modifieInventaire())
                 modifieInventaire(maPage);
             if (!this.monLecteur.statsToChange(maPage.getTexte(), maPage).isEmpty())
@@ -185,13 +190,10 @@ public class MethodesLancement extends ListenableModel {
                     // gérer l'exception
                 }
             }
-            System.out.println("input choice = " + this.inputChoice);
             numPage = getChoiceInterface(maPage);
-            System.out.println(numPage + "\n");
-            if (numPage == 0) {
+            if (numPage == 0 || numPage == 350 || numPage == 400) {
                 this.frame.set(new EcranFin(frame, menu));
             }
-
             mesChoix = maPage.getChoix();
 
         }
@@ -201,6 +203,14 @@ public class MethodesLancement extends ListenableModel {
     public void setInputChoice(int choix) {
         System.out.println("Choice Input = " + choix);
         this.inputChoice = choix;
+    }
+
+    public void setNbChoix(int val) {
+        this.nbChoix = val;
+    }
+
+    public int getNbChoix() {
+        return this.nbChoix;
     }
 
     public Page createPage(int numSect) {

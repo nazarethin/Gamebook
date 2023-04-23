@@ -11,13 +11,15 @@ public class GameControlleur implements Listener {
 
     private MethodesLancement launcher;
     private Page pageActuelle;
+    private int nbChoix;
     private EcranJeu ecranJeu;
 
     public GameControlleur(MethodesLancement launcher, Menu frame) {
         this.launcher = launcher;
         this.pageActuelle = null/* launcher.createPage(1) */;
+        this.nbChoix = 2;
         EcranMenu menu = new EcranMenu(frame);
-        ecranJeu = new EcranJeu(frame, menu, "json");
+        ecranJeu = new EcranJeu(frame, menu, "json", this.nbChoix);
         frame.set(ecranJeu);
         launcher.addListener(this);
         launcher.addListener(ecranJeu);
@@ -32,5 +34,8 @@ public class GameControlleur implements Listener {
     public void update(Object o) {
         System.out.println("Update gamecontrolleur");
         this.pageActuelle = launcher.getPageActuelle();
+        this.nbChoix = launcher.getNbChoix();
+        ecranJeu.setNbChoix(this.nbChoix);
+        System.out.println("getter" + ecranJeu.getNbChoix());
     }
 }
