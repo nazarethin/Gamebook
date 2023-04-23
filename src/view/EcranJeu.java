@@ -4,7 +4,6 @@ import java.awt.*;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.event.*;
-import java.awt.peer.CheckboxMenuItemPeer;
 import java.util.ArrayList;
 
 import util.*;

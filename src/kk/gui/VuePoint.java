@@ -7,7 +7,7 @@ package kk.gui;
 
 import kk.geometrie.Point;
 import kk.geometrie.Segment;
-import kk.gui.Boule;
+import kk.gui.components.Boule;
 
 import java.awt.*; 
 import javax.swing.*;
