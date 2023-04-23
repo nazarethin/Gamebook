@@ -36,30 +36,20 @@ public class KamadaKawai extends ListenableModel{
 		this.RES = res;
 		this.DIAM = diam;
 		this.seuil = seuil;
-		this.points = points;
+		this.points = this.initPoints(points);
 		this.matrice = new MatriceAdjacence(points, RES, DIAM);
 	}
-		
-	//------------------------------------------------------//
-
-	public ArrayList<Point> initCercle(){
-		int modulo = 90;
-		int n = points.size()/modulo;
-		if (n >= 1){
-			ArrayList<Point> res = new ArrayList<>();
-			for (int i = 0; i<=n; i++){	
-				int fin = (i+1)*modulo;
-				if (fin > points.size()){
-					fin = points.size();
-				}			
-				ArrayList<Point> subList = new ArrayList<Point>(points.subList(i*modulo, fin));
-				res.addAll(new Polygone(subList, RES - i*100, i*50).getPoints());				
-			}
-			return res;
-		}
-		return new Polygone(points, RES-18).getPoints();
+	
+	public KamadaKawai(ArrayList<Point> points, int res, int diam){	
+		this(points, res, diam, 2);
 	}
-				
+	
+	//------------------------------------------------------//
+		
+	public ArrayList<Point> initPoints(ArrayList<Point> points){
+		return new Polygone(points, RES).getPoints();
+	}
+		
 	public void newPos(Point p){
 		double a, b, c, d , e, x, y, nume;
 		HashMap<String, Point> dp1 = new DP(this.matrice, p, 1).get(); 
@@ -115,10 +105,6 @@ public class KamadaKawai extends ListenableModel{
 			res.add(p.delta(this.matrice));
 		}
 		return res;
-	}
-	
-	public int getSeuil(){
-		return (int) this.seuil;
 	}
 	
 	@Override

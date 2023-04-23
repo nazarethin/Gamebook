@@ -248,9 +248,9 @@ réponse est exacte, je vous laisserai partir librement ; si elle est fausse, en
 vous changerai en pierre. » À nouveau, il se met à glousser, enchanté, de toute évidence,
 que vous soyez là. Qu'allez-vous faire ?
 
-Attendre qu'il vous pose la question ? Rendez-vous au 382
-Vous précipiter sur lui l'épée à la main ? Rendez-vous au 195
-Vous élancer vers la porte pour chercher à fuir ? Rendez-vous au 250
+Attendre qu'il vous pose la question ? Rendez-vous au 382.
+Vous précipiter sur lui l'épée à la main ? Rendez-vous au 195.
+Vous élancer vers la porte pour chercher à fuir ? Rendez-vous au 250.
 
 13
 
@@ -284,17 +284,16 @@ continuez votre route en direction de l'ouest. Rendez-vous au 74.
 
 Vous avez à peine le temps d'entendre le Gnome dire : « Trois crânes », qu'un éclair
 blanc, jaillissant de la serrure, vous frappe en pleine poitrine. Vous tombez évanoui sur le
-sol. Lancez un dé. Ajoutez 1 point au chiffre obtenu et réduisez d'autant votre total
-d' ENDURANCE . Si l'éclair ne vous a pas foudroyé, vous reprenez conscience, et le Gnome
+sol. Vous perdez 5 points d'ENDURANCE. Si l'éclair ne vous a pas foudroyé, vous reprenez conscience, et le Gnome
 vous demande de faire une nouvelle tentative. La dernière fois, vous n'avez pas choisi les
 bonnes pierres, aussi n'essaierez-vous plus cette combinaison.
 
-Émeraude, Diamant, Saphir : Rendez-vous au 16
-Diamant, Saphir, Émeraude : Rendez-vous au 392
-Saphir, Émeraude, Diamant : Rendez-vous au 177
-Émeraude, Saphir, Diamant : Rendez-vous au 287
-Diamant, Émeraude, Saphir : Rendez-vous au 132
-Saphir, Diamant, Émeraude : Rendez-vous au 249
+Émeraude, Diamant, Saphir : Rendez-vous au 16.
+Diamant, Saphir, Émeraude : Rendez-vous au 392.
+Saphir, Émeraude, Diamant : Rendez-vous au 177.
+Émeraude, Saphir, Diamant : Rendez-vous au 287.
+Diamant, Émeraude, Saphir : Rendez-vous au 132.
+Saphir, Diamant, Émeraude : Rendez-vous au 249.
 
 17
 
@@ -347,9 +346,9 @@ Elle semble profonde et est bien trop sombre pour qu'on en voie le fond. Le Barb
 de vous y descendre à l'aide de sa corde. Il possède, ajoute-t-il, une torche que vous
 pourriez prendre avec vous. Qu'allez-vous faire ?
 
-Accepter l'offre du Barbare ? Rendez-vous au 63
-Proposer de l'y descendre lui-même s'il est si impatient d'explorer le trou ? Rendez-vous au 184
-Proposer de sauter tous deux par-dessus la fosse ? Rendez-vous au 311
+Accepter l'offre du Barbare ? Rendez-vous au 63.
+Proposer de l'y descendre lui-même s'il est si impatient d'explorer le trou ? Rendez-vous au 184.
+Proposer de sauter tous deux par-dessus la fosse ? Rendez-vous au 311.
 
 23
 
@@ -522,9 +521,9 @@ Vous vous dirigez lentement vers l'alcôve, vérifiant avec soin que le sol ne r
 d'autres pièges, et vous constatez que la coupe contient un liquide vermeil et pétillant.
 Qu'allez-vous faire ?
 
-Boire le liquide vermeil ? Rendez-vous au 98
-Laisser la coupe où elle est et revenir sur vos pas pour fouiller le Barbare (si vous ne l'avez pas encore fait) ? Rendez-vous au 126
-Quitter la pièce et continuer vers l'ouest ? Rendez-vous au 83
+Boire le liquide vermeil ? Rendez-vous au 98.
+Laisser la coupe où elle est et revenir sur vos pas pour fouiller le Barbare (si vous ne l'avez pas encore fait) ? Rendez-vous au 126.
+Quitter la pièce et continuer vers l'ouest ? Rendez-vous au 83.
 
 42
 
@@ -739,12 +738,12 @@ mort. Êtes-vous prêt ? » Vous approuvez d'un signe de tête et vous vous appr
 porte. Choisissez, dans la liste ci-dessous, dans quel ordre vous voulez introduire les
 pierres précieuses :
 
-Émeraude, Diamant, Saphir : Rendez-vous au 16
-Diamant, Saphir, Émeraude : Rendez-vous au 392
-Saphir, Émeraude, Diamant : Rendez-vous au 177
-Émeraude, Saphir, Diamant : Rendez-vous au 287
-Diamant, Émeraude, Saphir : Rendez-vous au 132
-Saphir, Diamant, Émeraude : Rendez-vous au 249
+Émeraude, Diamant, Saphir : Rendez-vous au 16.
+Diamant, Saphir, Émeraude : Rendez-vous au 392.
+Saphir, Émeraude, Diamant : Rendez-vous au 177.
+Émeraude, Saphir, Diamant : Rendez-vous au 287.
+Diamant, Émeraude, Saphir : Rendez-vous au 132.
+Saphir, Diamant, Émeraude : Rendez-vous au 249.
 
 63
 
@@ -860,9 +859,9 @@ chemin. Il s'avance lentement dans votre direction, ses quatre bras tendus pour 
 vous attraper. La créature qui vous fait face est le DÉMON DU MIROIR ; issu d'une
 autre dimension, il est venu s'emparer de votre âme. Qu'allez-vous faire ?
 
-Un vœu (si vous possédez un Anneau Magique) ? Rendez-vous au 265
-Essayer de briser les miroirs ? Rendez-vous au 300
-Attaquer le Démon du Miroir avec votre épée ? Rendez-vous au 327
+Un vœu (si vous possédez un Anneau Magique) ? Rendez-vous au 265.
+Essayer de briser les miroirs ? Rendez-vous au 300.
+Attaquer le Démon du Miroir avec votre épée ? Rendez-vous au 327.
 
 75
 
@@ -915,9 +914,9 @@ Dans la pièce où se trouvaient les Gobelins, il n'y a qu'une table, deux chais
 placard accroché au mur. Vous remarquez également deux portes qui sont fermées : l'une
 dans le mur ouest, l'autre dans le mur nord. Qu'allez-vous faire ?
 
-Ouvrir le placard ? Rendez-vous au 307
-Ouvrir la porte ouest ? Rendez-vous au 263
-Ouvrir la porte nord ?Rend ez-vous au 136
+Ouvrir le placard ? Rendez-vous au 307.
+Ouvrir la porte ouest ? Rendez-vous au 263.
+Ouvrir la porte nord ?Rendez-vous au 136.
 
 82
 
@@ -989,9 +988,9 @@ de cuir, rendez-vous au 172. Dans le cas contraire, rendez-vous au 357.
 
 
 Le fléau d'armes de l'Orque s'abat sur votre bras, et, sous le choc, vous lâchez votre épée.
-Il vous faut à présent les combattre à main nue. Réduisez de ce fait votre total d'HABILETÉ
-de 4 points pendant la durée du combat. Par chance, le tunnel est trop étroit pour que les
-deux Orques puissent vous attaquer en même temps. Affrontez-les un par un.
+Il vous faut à présent les combattre à main nue. perdez 4 points d'HABILETÉ pendant la durée du combat. 
+Par chance, le tunnel est trop étroit pour que lesdeux Orques puissent vous attaquer en même temps. 
+Affrontez-les un par un.
 
 Premier ORQUE HABILETÉ : 5 ENDURANCE : 5
 Deuxième ORQUE HABILETÉ : 6 ENDURANCE : 4
@@ -1097,8 +1096,8 @@ retentit : « Bienvenue dans le Labyrinthe de la Mort, le souterrain meurtrier, 
 géniale du baron Sukumvit. Aventurier, je pense que tu brûles de rendre hommage à mon
 maître en louant son nom ? » Allez-vous dire :
 
-Gloire au Baron Sukumvit ? Rendez-vous au 133
-Sukumvit est un scélérat ? Rendez-vous au 251
+Gloire au Baron Sukumvit ? Rendez-vous au 133.
+Sukumvit est un scélérat ? Rendez-vous au 251.
 
 103
 
@@ -1147,9 +1146,9 @@ tiques, et même des mites qui mesurent plus de six centimètres de long. Au mil
 pièce, une couronne est posée sur une petite table. Elle est incrustée de pierres précieuses
 et, en son centre, est serti un énorme diamant. Qu'allez-vous faire ?
 
-Briser la vitre et essayer de vous emparer de la couronne ? Rendez-vous au 394
-Continuer vers l'ouest ? Rendez-vous au 59
-Retourner à la bifurcation pour vous diriger vers le nord ? Rendez-vous au 14
+Briser la vitre et essayer de vous emparer de la couronne ? Rendez-vous au 394.
+Continuer vers l'ouest ? Rendez-vous au 59.
+Retourner à la bifurcation pour vous diriger vers le nord ? Rendez-vous au 14.
 
 109
 
@@ -1291,9 +1290,9 @@ Tentez votre Chance. Si vous êtes Chanceux, rendez-vous au 69. Si vous êtes Ma
 Le sac qui pend à la ceinture du Barbare ne contient qu'une viande séchée à l'aspect
 étrange, enveloppée dans un morceau de tissu. Qu'allez-vous faire ?
 
-Manger la viande séchée ? Rendez-vous au 226
-Laisser là la viande et gagner l'alcôve (si vous ne l'avez pas déjà fait) ? Rendez-vous au 41
-Quitter la pièce et vous diriger vers l'ouest ? Rendez-vous au 83
+Manger la viande séchée ? Rendez-vous au 226.
+Laisser là la viande et gagner l'alcôve (si vous ne l'avez pas déjà fait) ? Rendez-vous au 41.
+Quitter la pièce et vous diriger vers l'ouest ? Rendez-vous au 83.
 
 127
 
@@ -1324,9 +1323,9 @@ mâchoires qui s'ouvrent et se ferment avec une force à broyer des os. Il y a u
 porte à deux battants dans le mur opposé. Il semble qu'elle soit la seule issue à cette partie
 du souterrain. Que choisissez-vous de faire ?
 
-Vous descendez le long de la corde pour affronter le MONSTRE DES ABÎMES ? Rendez-vous au 349
-Vous lancez dans la fosse votre talisman en forme de singe (si vous en avez un) ? Rendez-vous au 361
-Vous essayez d'attraper le MONSTRE DES ABÎMES avec votre grappin en restant assis sur le haut du mur ? Rendez-vous au 167
+Vous descendez le long de la corde pour affronter le MONSTRE DES ABÎMES ? Rendez-vous au 349.
+Vous lancez dans la fosse votre talisman en forme de singe (si vous en avez un) ? Rendez-vous au 361.
+Vous essayez d'attraper le MONSTRE DES ABÎMES avec votre grappin en restant assis sur le haut du mur ? Rendez-vous au 167.
 
 130
 
@@ -1356,12 +1355,12 @@ conscience, et le Gnome vous demande de faire une nouvelle tentative. Vous savez
 vous avez placé une des pierres précieuses dans la bonne fente, mais laquelle est-ce ?
 Vous soupirez et, avec une certaine hésitation, vous essayez une nouvelle combinaison.
 
-Émeraude, Diamant, Saphir : Rendez-vous au 16
-Diamant, Saphir, Émeraude : Rendez-vous au 392
-Saphir, Émeraude, Diamant : Rendez-vous au 177
-Émeraude, Saphir, Diamant : Rendez-vous au 287
-Diamant, Émeraude, Saphir : Rendez-vous au 132
-Saphir, Diamant, Émeraude : Rendez-vous au 249
+Émeraude, Diamant, Saphir : Rendez-vous au 16.
+Diamant, Saphir, Émeraude : Rendez-vous au 392.
+Saphir, Émeraude, Diamant : Rendez-vous au 177.
+Émeraude, Saphir, Diamant : Rendez-vous au 287.
+Diamant, Émeraude, Saphir : Rendez-vous au 132.
+Saphir, Diamant, Émeraude : Rendez-vous au 249.
 
 133
 
@@ -1413,10 +1412,10 @@ liquide translucide. Vous le prenez et le montrez à Throm. Il lève aussitôt l
 indiquant par ce geste qu'il ne veut pas que vous l'approchiez avec ce flacon ; il est clair
 qu'il se moque de ce qu'il ne connaît pas. Mais vous, qu'allez-vous faire ?
 
-Boire le liquide qui se trouve dans le flacon ? Rendez-vous au 397
-Passer le liquide sur vos plaies ? Rendez-vous au 75
-Ouvrir le livre rouge (si vous ne l'avez pas encore fait) ? Rendez-vous au 52
-Laisser là le flacon et le livre, et continuer vers le nord en compagnie de Throm ? Rendez-vous au 369
+Boire le liquide qui se trouve dans le flacon ? Rendez-vous au 397.
+Passer le liquide sur vos plaies ? Rendez-vous au 75.
+Ouvrir le livre rouge (si vous ne l'avez pas encore fait) ? Rendez-vous au 52.
+Laisser là le flacon et le livre, et continuer vers le nord en compagnie de Throm ? Rendez-vous au 369.
 
 139
 
@@ -1550,8 +1549,7 @@ Notez un grappin. Notez une ceinture de cuivre.
 grincement en provenance du sol. Vous baissez les yeux et vous avez la surprise de voir
 les deux oiseaux empaillés prendre leur envol. Les battements de leurs ailes sont
 saccadés, ce qui ne les empêche pas de tournoyer au-dessus de votre tête en semblants
-prêts à vous attaquer. Affrontez les GARDIENS VOLANTS un par un, mais réduisez
-votre total d'HABILETÉ de 2 points pendant toute la durée de ce combat en raison de votre
+prêts à vous attaquer. Affrontez les GARDIENS VOLANTS un par un, mais perdez 2 points d'HABILETÉ toute la durée de ce combat en raison de votre
 position qui limite votre liberté de mouvements.
 
 Premier GARDIEN VOLANT HABILETÉ : 7 ENDURANCE : 8
@@ -1578,9 +1576,9 @@ lequel est posé un crâne humain ; serties dans ses orbites, brillent deux pier
 Une rangée d'arbalètes chargées est accrochée au mur de gauche, et il y a deux boules en
 bois sur le sol, près de l'entrée. Qu'allez-vous faire ?
 
-Pénétrer dans la pièce et prendre le crâne ? Rendez-vous au 390
-Rester près de l'entrée et lancer une des boules en bois sur le crâne ? Rendez-vous au 371
-Refermer la porte et continuer vers l'ouest en emportant les boules en bois ? Rendez-vous au 74
+Pénétrer dans la pièce et prendre le crâne ? Rendez-vous au 390.
+Rester près de l'entrée et lancer une des boules en bois sur le crâne ? Rendez-vous au 371.
+Refermer la porte et continuer vers l'ouest en emportant les boules en bois ? Rendez-vous au 74.
 
 154
 
@@ -1687,8 +1685,8 @@ du nord. Rendez-vous au 234.
 grincement en provenance du sol. Vous baissez les yeux et vous êtes stupéfait de voir les
 deux oiseaux empaillés prendre leur envol. Les battements de leurs ailes sont saccadés, ce
 qui ne les empêche pas de tournoyer bientôt au-dessus de votre tête, apparemment prêts à
-vous attaquer. Affrontez les GARDIENS VOLANTS un par un, mais réduisez votre total
-d'HABILETÉ de 3 points pendant toute la durée de ce combat, en raison de votre position qui
+vous attaquer. Affrontez les GARDIENS VOLANTS un par un, mais perdez 3 points
+d'HABILETÉ pendant toute la durée de ce combat, en raison de votre position qui
 limite votre liberté de mouvements.
 
 Premier GARDIEN VOLANT HABILETÉ : 7 ENDURANCE : 8
@@ -1986,9 +1984,9 @@ Sur un rebord de pierre contre le mur du tunnel, vous apercevez deux livres pous
 la reliure de cuir. Throm, d'un grognement, exprime son mépris de toute écriture en vous
 faisant signe de ne pas toucher aux livres et de continuer. Que faites-vous ?
 
-Vous ouvrez le livre à la reliure de cuir rouge ? Rendez-vous au 52
-Vous ouvrez le livre à la reliure de cuir noir ? Rendez-vous au 138
-Vous poursuivez vers le nord le long du tunnel ? Rendez-vous au 369
+Vous ouvrez le livre à la reliure de cuir rouge ? Rendez-vous au 52.
+Vous ouvrez le livre à la reliure de cuir noir ? Rendez-vous au 138.
+Vous poursuivez vers le nord le long du tunnel ? Rendez-vous au 369.
 
 195
 
@@ -2018,9 +2016,9 @@ d'une certaine fraîcheur. Dans le mur gauche du tunnel, vous apercevez une port
 Au centre du panneau se trouve une petite plaque qui pourrait, peut-être, coulisser.
 Qu'allez-vous faire ?
 
-Essayer d'ouvrir la porte ? Rendez-vous au 171
-Essayer de faire glisser la plaque de fer ? Rendez-vous au 156
-Continuer vers le nord le long du tunnel ? Rendez-vous au 326
+Essayer d'ouvrir la porte ? Rendez-vous au 171.
+Essayer de faire glisser la plaque de fer ? Rendez-vous au 156.
+Continuer vers le nord le long du tunnel ? Rendez-vous au 326.
 
 198
 
@@ -2229,8 +2227,8 @@ convulsivement tandis que les vibrations s'intensifient. Vous perdez 2 points d'
 2 points d'ENDURANCE. Vous cherchez désespérément un moyen d'arrêter la cloche.
 Qu'allez-vous faire ?
 
-Crier aussi fort que vous le pouvez ? Rendez-vous au 61
-Essayer de neutraliser la cloche avec votre botte ? Rendez-vous au 346
+Crier aussi fort que vous le pouvez ? Rendez-vous au 61.
+Essayer de neutraliser la cloche avec votre botte ? Rendez-vous au 346.
 
 221
 
@@ -2325,9 +2323,9 @@ vous jetez un coup d'œil à l'intérieur. Une vingtaine de minuscules bonshomme
 nez et aux longues oreilles sont rassemblés là, courant en cercle autour d'une grande
 statue d'or. Que choisissez-vous de faire ?
 
-Vous vous avancez et vous leur parlez ? Rendez-vous au 88
-Vous essayez de passer devant eux sans vous faire remarquer ? Rendez-vous au 5
-Vous buvez la Potion de Mimétisme (si vous en avez une) ? Rendez-vous au 385
+Vous vous avancez et vous leur parlez ? Rendez-vous au 88.
+Vous essayez de passer devant eux sans vous faire remarquer ? Rendez-vous au 5.
+Vous buvez la Potion de Mimétisme (si vous en avez une) ? Rendez-vous au 385.
 
 231
 
@@ -2503,12 +2501,12 @@ reprenez conscience et le Gnome vous demande de faire une nouvelle tentative. Vo
 savez que vous avez mis une des pierres précieuses dans la bonne fente, mais laquelle est-
 ce ? Avec un profond soupir, vous essayez une nouvelle combinaison.
 
-Émeraude, Diamant, Saphir : Rendez-vous au 16
-Diamant, Saphir, Émeraude : Rendez-vous au 392
-Saphir, Émeraude, Diamant : Rendez-vous au 177
-Émeraude, Saphir, Diamant : Rendez-vous au 287
-Diamant, Émeraude, Saphir : Rendez-vous au 132
-Saphir, Diamant, Émeraude : Rendez-vous au 249
+Émeraude, Diamant, Saphir : Rendez-vous au 16.
+Diamant, Saphir, Émeraude : Rendez-vous au 392.
+Saphir, Émeraude, Diamant : Rendez-vous au 177.
+Émeraude, Saphir, Diamant : Rendez-vous au 287.
+Diamant, Émeraude, Saphir : Rendez-vous au 132.
+Saphir, Diamant, Émeraude : Rendez-vous au 249.
 
 250
 
@@ -2516,9 +2514,9 @@ Alors que vous courez pour atteindre la porte, le vieil homme derrière vous s'�
 est inutile de courir, personne ne peut m'échapper. Arrêtez ou je vous change en pierre
 sur-le-champ ! » Qu'allez-vous faire ?
 
-Continuer à courir ? Rendez-vous au 44
-Vous retourner et l'attaquer avec votre épée ? Rendez-vous au 195
-Lui dire que vous allez répondre à sa question ? Rendez-vous au 382
+Continuer à courir ? Rendez-vous au 44.
+Vous retourner et l'attaquer avec votre épée ? Rendez-vous au 195.
+Lui dire que vous allez répondre à sa question ? Rendez-vous au 382.
 
 251
 
@@ -2625,9 +2623,9 @@ La porte s'ouvre sur un autre tunnel orienté vers le nord. De part et d'autre d
 trouvent deux fontaines en forme de chérubins. L'eau jaillit de leur bouche et tombe en
 cascade dans de petites vasques posées à leurs pieds. Qu'allez-vous faire ?
 
-Boire à la fontaine de gauche ? Rendez-vous au 337
-Boire à la fontaine de droite ? Rendez-vous au 173
-Continuer votre marche vers le nord ? Rendez-vous au 368
+Boire à la fontaine de gauche ? Rendez-vous au 337.
+Boire à la fontaine de droite ? Rendez-vous au 173.
+Continuer votre marche vers le nord ? Rendez-vous au 368.
 
 263
 
@@ -2641,9 +2639,9 @@ Devant vous, dans la faible lumière du tunnel, vous apercevez deux LUTINS en tr
 se battre furieusement à coups de poing et de pied. Un sac posé sur le sol semble être la
 cause de la bagarre. Qu'allez-vous faire ?
 
-Essayer de leur parler ? Rendez-vous au 130
-Les attaquer avec votre épée ? Rendez-vous au 51
-Essayer de vous faufiler sans vous faire remarquer ? Rendez-vous au 355
+Essayer de leur parler ? Rendez-vous au 130.
+Les attaquer avec votre épée ? Rendez-vous au 51.
+Essayer de vous faufiler sans vous faire remarquer ? Rendez-vous au 355.
 
 265
 
@@ -2723,8 +2721,8 @@ prudence et vous ramassez le crâne, dont les yeux sont des topazes que vous vou
 empressez d'enlever de leurs orbites. Vous les rangez ensuite dans votre sac à dos en vous
 demandant si un piège vous attend toujours dans la pièce. Qu'allez-vous faire ?
 
-Vous mettre à quatre pattes et ramper hors de la pièce en emportant le crâne ? Rendez-vous au 15
-Replacer le crâne sur le socle avant de quitter la pièce ? Rendez-vous au 204
+Vous mettre à quatre pattes et ramper hors de la pièce en emportant le crâne ? Rendez-vous au 15.
+Replacer le crâne sur le socle avant de quitter la pièce ? Rendez-vous au 204.
 
 Notez un topaze. Notez un topaze.
 
@@ -2859,12 +2857,12 @@ savez que vous avez mis une des pierres précieuses dans la bonne fente, mais la
 ce ? Vous laissez échapper un soupir, puis, en hésitant quelque peu, vous essayez une
 nouvelle combinaison.
 
-Émeraude, Diamant, Saphir : Rendez-vous au 16
-Diamant, Saphir, Émeraude : Rendez-vous au 392
-Saphir, Émeraude, Diamant : Rendez-vous au 177
-Émeraude, Saphir, Diamant : Rendez-vous au 287
-Diamant, Émeraude, Saphir : Rendez-vous au 132
-Saphir, Diamant, Émeraude : Rendez-vous au 249
+Émeraude, Diamant, Saphir : Rendez-vous au 16.
+Diamant, Saphir, Émeraude : Rendez-vous au 392.
+Saphir, Émeraude, Diamant : Rendez-vous au 177.
+Émeraude, Saphir, Diamant : Rendez-vous au 287.
+Diamant, Émeraude, Saphir : Rendez-vous au 132.
+Saphir, Diamant, Émeraude : Rendez-vous au 249.
 
 288
 
@@ -2918,7 +2916,7 @@ diriger vers le nord, sur la trace de la troisième paire d'empreintes, rendez-v
 Avec votre main libre, vous tirez le poignard de votre ceinture et vous tranchez la langue
 de la Bête Sanguinaire. Le monstre hurle de douleur et se jette en avant, aussi loin que
 possible, pour essayer de vous attraper entre ses mâchoires sanguinolentes. Il vous faut
-combattre la bête, avec votre poignard. Réduisez votre total d'HABILETÉ de 2 points au
+combattre la bête, avec votre poignard. Vous perdez 2 points d'HABILETÉ au
 cours de cet affrontement, car vous ne combattez pas avec votre épée.
 
 BÊTE SANGUINAIRE HABILETÉ : 12 ENDURANCE : 10
@@ -2966,9 +2964,9 @@ un fil sur lequel il a dû marcher, déclenchant ainsi le mécanisme qui actionn
 armature hérissée de pointes. Au fond de la pièce, se trouve une alcôve qui abrite une
 coupe en argent posée sur une petite table en bois. Qu'allez-vous faire ?
 
-Vous approcher du Barbare pour le fouiller ? Rendez-vous au 126
-Vous diriger vers l'alcôve ? Rendez-vous au 41
-Refermer la porte et continuer vers l'ouest ? Rendez-vous au 83
+Vous approcher du Barbare pour le fouiller ? Rendez-vous au 126.
+Vous diriger vers l'alcôve ? Rendez-vous au 41.
+Refermer la porte et continuer vers l'ouest ? Rendez-vous au 83.
 
 300
 
@@ -3154,9 +3152,9 @@ Vous décidez de fouiller le Ninja et, dans un pli de ses vêtements, vous trouv
 tissu. À l'intérieur, il y a une gourde d'eau, du riz enveloppé dans une feuille de palme, un
 pot d'onguent ainsi qu'un magnifique diamant. Qu'allez-vous faire ?
 
-Manger le riz et boire l'eau ? Rendez-vous au 330
-Passer l'onguent sur vos blessures ? Rendez-vous au 269
-Ne prendre que le diamant et quitter le hall ? Rendez-vous au 127
+Manger le riz et boire l'eau ? Rendez-vous au 330.
+Passer l'onguent sur vos blessures ? Rendez-vous au 269.
+Ne prendre que le diamant et quitter le hall ? Rendez-vous au 127.
 
 Notez un diamant.
 
@@ -3334,9 +3332,9 @@ Un boiteux aux pieds entravés par des fers s'avance vers vous en clopinant. Il 
 plateau de bois une miche de pain et une carafe d'eau. Il semble épuisé et misérable et
 s'apprête à passer devant vous sans vous accorder la moindre attention. Que faites-vous ?
 
-Vous lui adressez la parole ? Rendez-vous au 367
-Vous prenez l'eau et le pain qui se trouvent sur le plateau ? Rendez-vous au 38
-Vous lui offrez un peu de vos provisions (s'il vous en reste) ? Rendez-vous au 169
+Vous lui adressez la parole ? Rendez-vous au 367.
+Vous prenez l'eau et le pain qui se trouvent sur le plateau ? Rendez-vous au 38.
+Vous lui offrez un peu de vos provisions (s'il vous en reste) ? Rendez-vous au 169.
 
 342
 
@@ -3482,9 +3480,9 @@ La Bête Sanguinaire patauge maladroitement dans son bassin. Des bulles de gaz v
 crever à la surface et empestent l'air de vapeurs empoisonnées qui vous donnent des haut-
 le-cœur. Qu'allez-vous faire ?
 
-Contourner le bassin en courant pour atteindre le tunnel ? Rendez-vous au 255
-Lancer une pierre précieuse dans le bassin (si vous en avez une) ? Rendez-vous au 332
-Attaquer la Bête Sanguinaire avec votre épée ? Rendez-vous au 180
+Contourner le bassin en courant pour atteindre le tunnel ? Rendez-vous au 255.
+Lancer une pierre précieuse dans le bassin (si vous en avez une) ? Rendez-vous au 332.
+Attaquer la Bête Sanguinaire avec votre épée ? Rendez-vous au 180.
 
 358
 
@@ -3512,9 +3510,9 @@ et vous sort du panier qu'elle laisse retomber sur le sol du tunnel. Puis elle v
 par le cou, et d'une voix rauque vous dit : « Je veux être payée aussi ! » Qu'allez-vous
 faire ?
 
-Lui offrir un des objets contenus dans votre sac à dos ? Rendez-vous au 297
-Essayer de la payer de belles paroles au lieu de lui donner quoi que ce soit ? Rendez-vous au 328
-L'attaquer avec votre épée ? Rendez-vous au 211
+Lui offrir un des objets contenus dans votre sac à dos ? Rendez-vous au 297.
+Essayer de la payer de belles paroles au lieu de lui donner quoi que ce soit ? Rendez-vous au 328.
+L'attaquer avec votre épée ? Rendez-vous au 211.
 
 361
 
@@ -3738,9 +3736,9 @@ torturée de son visage est fixée à jamais dans la pierre. Le vieil homme sour
 « Cet homme pèse 100 livres, plus la moitié de son poids. Combien pèse-t-il ? » Quelle
 va être votre réponse ?
 
-100 livres ? Rendez-vous au 144
-150 livres ? Rendez-vous au 227
-200 livres ? Rendez-vous au 391
+100 livres ? Rendez-vous au 144.
+150 livres ? Rendez-vous au 227.
+200 livres ? Rendez-vous au 391.
 
 383
 
@@ -3843,12 +3841,12 @@ conscience et le Gnome vous demande de faire une nouvelle tentative. Vous n'avez
 aucune des pierres précieuses dans la bonne suite, aussi devez-vous exclure désormais
 cette combinaison.
 
-Émeraude, Diamant, Saphir : Rendez-vous au 16
-Diamant, Saphir, Émeraude : Rendez-vous au 392
-Saphir, Émeraude, Diamant : Rendez-vous au 177
-Émeraude, Saphir, Diamant : Rendez-vous au 287
-Diamant, Émeraude, Saphir : Rendez-vous au 132
-Saphir, Diamant, Émeraude : Rendez-vous au 249
+Émeraude, Diamant, Saphir : Rendez-vous au 16.
+Diamant, Saphir, Émeraude : Rendez-vous au 392.
+Saphir, Émeraude, Diamant : Rendez-vous au 177.
+Émeraude, Saphir, Diamant : Rendez-vous au 287.
+Diamant, Émeraude, Saphir : Rendez-vous au 132.
+Saphir, Diamant, Émeraude : Rendez-vous au 249.
 
 393
 
