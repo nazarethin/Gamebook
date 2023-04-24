@@ -3,7 +3,7 @@
  * @author LARRIVAIN Daphne 22112005
  */
 
-package kk.calcul.matrice;
+package kk.calcul;
 
 import kk.geometrie.Segment;
 import kk.geometrie.Point;
@@ -16,12 +16,12 @@ import java.text.DecimalFormat;
 public class Ressort extends Segment{
 
 	private static final DecimalFormat df = new DecimalFormat("0.0"); //arrondi à une décimale pour affichage.
-	private static final double K = 2;
+	private static final double K = 1;
 	
-	private double dij; //Distance entre deux points. 1 si lie deux points, 0 sinon.
-	private double lij; //Longueur du ressort.
-	private double kij; //Force du ressort.
-			
+	public double dij; //Distance entre deux points
+	public double lij; //Longueur du ressort
+	public double kij; //Force du ressort
+
 	/* Lo --> Côté de la zône d'affichage.
 	   diam --> Distance entre points les + éloignés graphe. */ 
 	   
@@ -48,20 +48,14 @@ public class Ressort extends Segment{
 		this(p1, p2, dij, 0, 0);
 	}
 	
+	/*
 	public Ressort(double dij){ 
 		this(null, null, dij, 0, 0);
 	}
+	*/
 	
 	//-----------------------------------------------------//
-	
-	
-	public Point milieu(){
-		double x, y;
-		x = this.points.get(0).getX() - this.points.get(1).getX();
-		y = this.points.get(0).getY() - this.points.get(1).getY();
-		return new Point(x, y);
-	}
-		
+			
 	@Override
 	public String toString(){
 		return "(" + this.df.format(this.dij) + "|" + this.df.format(this.lij) + "|" + this.df.format(this.kij) + ")";

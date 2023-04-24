@@ -5,15 +5,11 @@
 
 package kk.calcul;
 
-import java.util.HashMap;
 import java.lang.Math;
 import java.util.ArrayList;
 
 import kk.geometrie.Point;
-import kk.calcul.matrice.*;
-import kk.calcul.numerateur.*;
-import kk.calcul.denominateur.Denominateur;
-
+import kk.geometrie.Segment;
 
 /*----------------------------------------------------------------------------*/
 
@@ -21,66 +17,76 @@ public class DP{
 
 	private MatriceAdjacence matrice;
 	private Point point;
-	private double degre;
 	
-	public DP(MatriceAdjacence mat, Point p, double degre){	
+	public DP(MatriceAdjacence mat, Point p){	
 		this.point = p;
 		this.matrice = mat;
-		this.degre = degre - 0.5;
 	}
 	
 	//------------------------------------------------------//
-		
-	public HashMap<String, Point> get(){
-		HashMap<String, Point> res = new HashMap<>();		
-		if (this.getDeg() == 1){
-			res.put("dEa", this.computeDP(new NumeSimple()));
-		}
-		else {
-			res.put("dE2a", this.computeDP(new NumeCarre()));
-			res.put("dEab", this.computeDP(new NumeDouble()));
-		}
-		return res;
-	}
-		
-	public Point computeDP(Numerateur N){
+												
+	public Point dEa(){
 		Ressort[] paires = this.matrice.getPaires(this.point);
 		double dEx = 0;
 		double dEy = 0;
-		for (Ressort R : paires){
-				dEx += this.dpDiv(N, new Denominateur(this.degre), "x", R);
-				dEy += this.dpDiv(N, new Denominateur(this.degre), "y", R);
+		Point milieu;
+		for (Ressort r : paires){
+				milieu = r.milieu();
+				dEx += expression(milieu.getX(), r);
+				dEy += expression(milieu.getY(), r);
 		}
 		return new Point(dEx, dEy);
 	}
 	
-	public double dpDiv(Numerateur N, Denominateur D, String A, Ressort R){
-		Point m = R.milieu();
-		double a = m.getXY().get(A);
-		double b = D.denominateur(m);
-		
-		if (N instanceof NumeCarre){
-			a = m.getXY().get(this.otherKey(A));
+	public Point dE2a(){
+		Ressort[] paires = this.matrice.getPaires(this.point);
+		double dEx2 = 0;
+		double dEy2 = 0;
+		Point milieu;
+		for (Ressort r : paires){
+				milieu = r.milieu();
+				dEx2 += expression2(milieu.getY(), r);
+				dEy2 += expression2(milieu.getX(), r);
 		}
-		else if (N instanceof NumeDouble){
-			b = m.getXY().get(this.otherKey(A));
-		}
-		return this.safeDiv(N.numerateur(R, a, b), D.denominateur(m));
+		return new Point(dEx2, dEy2);
 	}
 			
+	public Point dEab(){
+		Ressort[] paires = this.matrice.getPaires(this.point);
+		double dExy = 0;
+		Point milieu;
+		for (Ressort r : paires){
+				milieu = r.milieu();
+				dExy += expression(milieu.getX()*milieu.getY(), r);
+		}
+		return new Point(dExy, dExy);
+	}
+				
 	public double safeDiv(double a, double b){
-		if (b == 0){
+		if (b == 0){                            
 			return 0;
 		}
 		return a/b;
 	}
-	
-	public String otherKey(String s){
-		if (s.equals("x")){
-			return "y";
-		}
-		return "x";
+		
+	public Double expression(Double coord, Ressort r){ //Pour dEx, dEy
+		return r.kij * (coord - safeDiv(r.lij*coord, D(r, 0.5)));
 	}
+
+	public Double expression2(Double coord, Ressort r){ //Pour dEx2, dEy2
+		return r.kij * (1 - safeDiv(r.lij*coord*coord, D(r, 1.5)));
+	}
+	
+	public Double expression3(Double coord, Ressort r){ //Pour dExy
+		return r.kij * safeDiv(r.lij*coord, D(r, 1.5));
+	}
+		
+	public double D(Segment s, double degre){
+		Point a = s.milieu();
+		double x = a.getX();
+		double y = a.getY();
+		return Math.pow(x*x + y*y, degre);
+	}	
 	
 	//-----------------------------------//
 	
@@ -90,9 +96,5 @@ public class DP{
 	
 	public Point getPoint(){
 		return this.point;
-	}
-	
-	public double getDeg(){
-		return this.degre + 0.5;
 	}
 }

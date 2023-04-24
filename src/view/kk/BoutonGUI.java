@@ -3,13 +3,11 @@
  * @author LARRIVAIN Daphne 22112005
  */
  
-package kk.gui.components;
+package view.kk;
 
 import kk.geometrie.Point;
 import kk.KamadaKawai;
-import kk.gui.*;
-import kk.gui.util.*;
-import kk.gui.components.*;
+import util.*;
 
 import javax.swing.*;
 import javax.swing.event.*;
@@ -21,15 +19,17 @@ import java.util.ArrayList;
 
 //-----------------------------------------------//
 
-public class Bouton extends JPanel implements ActionListener{
+public class BoutonGUI extends JPanel implements ActionListener{
 
 	private KamadaKawai kk;
+	private GrapheGui grapheGui;
 
-	public Bouton(KamadaKawai kk){
+	public BoutonGUI(GrapheGui grapheGui, KamadaKawai kk, String text){
 		super();
+		this.grapheGui = grapheGui;
 		this.kk = kk;
 		
-		JButton b = new JButton("Calculer");
+		JButton b = new JButton(text);
 		b.addActionListener(this);
 				
 		this.add(b);
@@ -39,6 +39,8 @@ public class Bouton extends JPanel implements ActionListener{
 	
 	@Override
 	public void actionPerformed(ActionEvent e){
+		System.out.println("Bouton");
+		this.kk.compute();
 		this.kk.fireChange();
 	}
 }

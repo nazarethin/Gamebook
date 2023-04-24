@@ -7,11 +7,15 @@ import java.io.File;
 import javax.swing.BorderFactory;
 import javax.swing.border.EmptyBorder;
 
+import view.kk.*;
+import kk.calcul.*;
+import kk.*;
+
 public class EcranMenu extends JPanel implements ActionListener {
 
 	private Menu frame;
 	private JButton jouerB = new JButton("Jouer");
-	private JButton graphB = new JButton("Graphique");
+	private JButton graphB = new JButton("Graphe");
 	private JButton metriqueB = new JButton("Métrique");
 	private Image img_background;
 
@@ -73,7 +77,10 @@ public class EcranMenu extends JPanel implements ActionListener {
 
 		} else if (source == graphB) {
 			System.out.println("lancer graph");
-			this.frame.set(new EcranGraph(frame, this));
+			//this.frame.set(new EcranGraph(frame, this));
+			//this.frame.set(new PanneauGraphe(frame, this));
+			this.frame.set(new PanneauChoix(frame, this));
+			
 		} else if (source == metriqueB) {
 			System.out.println("lancer metrique");
 			this.frame.set(new EcranMetrique(frame, this));

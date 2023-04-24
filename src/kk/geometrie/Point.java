@@ -7,8 +7,6 @@ package kk.geometrie;
 
 import kk.geometrie.Segment;
 import kk.calcul.*;
-import kk.calcul.matrice.*;
-import kk.calcul.denominateur.*;
 
 import java.util.ArrayList;
 import java.lang.Math;
@@ -82,9 +80,10 @@ public class Point{
 	/*--------------------------------------------------------------------------*/
 
 	public double delta(MatriceAdjacence m){
-		Point dp = new DP(m, this, 1).get().get("dEa");
-		Denominateur d = new Denominateur(0.5);
-		return d.denominateur(dp);
+		Point dp = new DP(m, this).dEa();
+		double x = dp.getX();
+		double y = dp.getY();
+		return Math.pow(x*x + y*y, 0.5);
 	}
 
 
