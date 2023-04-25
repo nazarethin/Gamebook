@@ -1,8 +1,4 @@
 
-/**
- * @author LARRIVAIN Daphne 22112005
- */
- 
 package view.kk;
 
 import kk.geometrie.Point;
@@ -43,35 +39,28 @@ public class Bouton extends JPanel implements ActionListener{
 		
 	@Override
 	public void actionPerformed(ActionEvent e){
-		System.out.println(this.kk);
         if (this == this.p.retourB) {
-            System.out.println("Retour menu");
 			this.p.frame.set(this.p.menu);
         }
 		else {
 			if (this.p instanceof PanneauChoix){
 				PanneauChoix pc = (PanneauChoix) this.p;
 				if (this == pc.carreB){
-					System.out.println("Carré");
 					pc.frame.set(new PanneauGraphe(pc.frame, pc.menu, new Presets().grapheCube()));
 				}
 				else if (this == pc.temoinB){
-					System.out.println("Temoin");
 					pc.frame.set(new PanneauGraphe(pc.frame, pc.menu, new Presets().grapheTemoin()));
 				}
 				else if (this == pc.txtB){
-					System.out.println("txt");
 					pc.frame.set(new PanneauGraphe(pc.frame, pc.menu, new Presets().grapheTxt(), 1));
 				}				
 				else if (this == pc.jsonB){
-					System.out.println("json");
 					pc.frame.set(new PanneauGraphe(pc.frame, pc.menu, new Presets().grapheJson(), 1));
 				}
 			}
 			else {
 				this.kk.compute();
 				this.kk.fireChange();
-				System.out.println("Compute connard");
 			}
 		}
 	}

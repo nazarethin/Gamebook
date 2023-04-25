@@ -1,8 +1,4 @@
 
-/**
- * @author LARRIVAIN Daphne 22112005
- */
-
 package kk;
 
 import java.util.*;
@@ -92,22 +88,19 @@ public class KamadaKawai extends ListenableModel{
 	}
 			
 	public void compute(double seuil){
-		Point p = this.maxDelta();
-		System.out.println(p.delta(this.matrice));
-		
+		Point p = this.maxDelta();		
 		while(p.delta(this.matrice) > seuil){
 			cc++;
-			System.out.println("---" + p.delta(this.matrice));
-						
+			System.out.println("---" + p.delta(this.matrice));		
 			while (p.delta(this.matrice) > seuil){
 				this.newPos(p);
 				crd++;
 				System.out.println("-" + p.delta(this.matrice));
-			}
-						
+			}			
 			p = this.maxDelta();
-		}
-		
+		}		
+		System.out.println("cc :" + cc);
+		System.out.println("crd :" + crd);				
 	}
 	
 	//------------------------------------------------------//
@@ -146,7 +139,6 @@ public class KamadaKawai extends ListenableModel{
 	
 	@Override
 	public void fireChange(){
-		System.out.println("KK");
 		for (Listener l : super.listeners){
 			l.update(this);
 		}	
