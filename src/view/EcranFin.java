@@ -43,13 +43,6 @@ public class EcranFin extends JPanel implements ActionListener {
 
         add(headerPanel, BorderLayout.NORTH);
         add(contentPanel, BorderLayout.CENTER);
-
-        /*
-         * File f = new File("analyseur-ldveh-bbn/images");
-         * System.out.println("Chemin absolu : " + f.getAbsolutePath());
-         * System.out.println(f.exists());
-         */
-
     }
 
     @Override
@@ -62,7 +55,6 @@ public class EcranFin extends JPanel implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         Object source = e.getSource();
         if (source == retourB) {
-            System.out.println("Retour menu");
             this.frame.set(menu);
         }
     }

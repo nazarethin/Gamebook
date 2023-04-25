@@ -11,20 +11,20 @@ import livre.*;
 
 public class EcranChoixLivre extends JPanel implements ActionListener {
 
-    private JPanel nextPanel;
     private Menu frame;
     private EcranMenu menu;
+    private String nextPanel;
     private JButton retourB = new JButton("Retour");
 
-    private JButton b1 = new JButton("FotW (JSON)");
-    private JButton b2 = new JButton("Le labyrinthe de la mort (Txt)");
+    private JButton b1 = new JButton("<html>FotW <br>(JSON)</html>");
+    private JButton b2 = new JButton("<html>Le labyrinthe de la mort <br>(Txt)</html>");
     private Image img_background;
 
-    public EcranChoixLivre(Menu frame, EcranMenu menu/* , JPanel nextPanel */) {
+    public EcranChoixLivre(Menu frame, EcranMenu menu, String nextPanel) {
         super(new BorderLayout());
         this.frame = frame;
         this.menu = menu;
-        /* this.nextPanel = nextPanel */;
+        this.nextPanel = nextPanel;
 
         this.setOpaque(true);
         img_background = new ImageIcon("images/background.jpg").getImage();
@@ -79,20 +79,30 @@ public class EcranChoixLivre extends JPanel implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         Object source = e.getSource();
         if (source == retourB) {
-            System.out.println("Retour menu");
             this.frame.set(menu);
         }
 
-        if (source == b1) {
-            System.out.println("Choix effectué");
+        if (source == b1) { //LIVRE JSON
             MethodesLancement launcher = new MethodesLancement(frame, menu, "json");
-            new GameControlleur(launcher, frame);
+            if (this.nextPanel == "livre"){
+                new GameControlleur(launcher, frame);
+            }
+            else if (this.nextPanel == "metrique"){
+                Lecteur lecteur = launcher.getLecteur();
+                this.frame.set(new EcranMetrique(frame, menu, lecteur));
+            }
+            
         }
 
-        if (source == b2) {
-            System.out.println("Choix effectué");
+        if (source == b2) { //LIVRE TXT
             MethodesLancement launcher = new MethodesLancement(frame, menu, "txt");
-            new GameControlleur(launcher, frame);
+            if (this.nextPanel == "livre"){
+                new GameControlleur(launcher, frame);
+            }
+            else if (this.nextPanel == "metrique"){
+                Lecteur lecteur = launcher.getLecteur();
+                this.frame.set(new EcranMetrique(frame, menu, lecteur));
+            }
         }
     }
 }

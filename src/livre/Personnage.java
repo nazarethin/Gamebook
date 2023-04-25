@@ -88,9 +88,9 @@ public class Personnage {
             } else {
                 inventaire.put(formerObject, ancienneQuantite - quantite);
             }
-            System.out.println(quantite + " " + formerObject + " ont été retirés de l'inventaire.");
+            //System.out.println(quantite + " " + formerObject + " ont été retirés de l'inventaire.");
         } else {
-            System.out.println(formerObject + " n'est pas présent dans l'inventaire.");
+            //System.out.println(formerObject + " n'est pas présent dans l'inventaire.");
         }
     }
 
@@ -114,7 +114,7 @@ public class Personnage {
             setChance(valeur);
         }
         else {
-            System.out.println("La stat : \"" + statToChange + "\" de valeur : " + valeur + " n'est pas valide\n" );
+            //System.out.println("La stat : \"" + statToChange + "\" de valeur : " + valeur + " n'est pas valide\n" );
         }
     }
 

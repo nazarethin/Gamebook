@@ -119,46 +119,22 @@ public class EcranJeu extends JPanel implements ActionListener, Listener {
 	public void actionPerformed(ActionEvent e) {
 		Object source = e.getSource();
 		if (source == retourB) {
-			System.out.println("Retour menu");
 			this.frame.set(menu);
 
-		} /*
-			 * if (source == choix1) {
-			 * System.out.println("Choix 1");
-			 * this.launcher.setInputChoice(0);
-			 * }
-			 * 
-			 * if (source == choix2) {
-			 * System.out.println("Choix 2");
-			 * this.launcher.setInputChoice(1);
-			 * }
-			 * 
-			 * if (source == choix3) {
-			 * System.out.println("Choix 3");
-			 * this.launcher.setInputChoice(2);
-			 * }
-			 * 
-			 * if (source == choix4) {
-			 * System.out.println("Choix 4");
-			 * this.launcher.setInputChoice(3);
-			 * }
-			 */
+		} 
+
 	}
 
 	@Override
 	public void update(Object o) {
 		this.launcher = (MethodesLancement) o;
 		Page pageActuelle = this.launcher.getPageActuelle();
-		System.out.println("nbChoix = " + this.nbChoix);
+		//System.out.println("nbChoix = " + this.nbChoix);
 		String texte = pageActuelle.getTexte();
 		this.texteArea.setText(texte);
 		this.texteArea.setFont(new Font("Arial", Font.PLAIN, 20));
 		this.setNbChoix(this.launcher.getNbChoix());
 
-		/*
-		 * this.choix1.setText(choix.get(0).getIntitule());
-		 * this.choix2.setText(choix.get(1).getIntitule());
-		 */
 		this.revalidate();
 		this.repaint();
 	}
@@ -177,7 +153,7 @@ public class EcranJeu extends JPanel implements ActionListener, Listener {
 			final int index = i;
 			button.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
-					System.out.println("Choix " + index + 1);
+					//System.out.println("Choix " + index + 1);
 					launcher.setInputChoice(index);
 				}
 			});
