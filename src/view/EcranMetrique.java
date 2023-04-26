@@ -68,7 +68,6 @@ public class EcranMetrique extends JPanel implements ActionListener {
                         "<br>" + 
 
                         "<br>Nombre de pages du chemin le plus court vers une victoire : " + cheminPlusCourtVictory +
-                        "<br>Chemin le plus rapide vers une victoire : " /*+ cheminRapideVic */+
                         "<br>" + 
 
                         "<br>Nombre de pages du chemin le plus court vers une mort : " + cheminPlusCourtMort +
