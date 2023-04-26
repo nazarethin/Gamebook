@@ -1,0 +1,1 @@
+Le code se compile et s'execute dans le repertoire principale

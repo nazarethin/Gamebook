@@ -35,10 +35,6 @@ public class Segment implements Comparable<Segment>{
 		this(p1, p2, false);
 	}	
 	
-	//public Segment(ArrayList<Point> points){
-	//	this(points.get(0), points.get(1), true);
-	//}
-
 	/*--------------------------------------------------------------------------*/
 	/* Accesseurs */
 	/*--------------------------------------------------------------------------*/
@@ -58,7 +54,13 @@ public class Segment implements Comparable<Segment>{
 		return false;
 	}
 	
-	
+	public Point milieu(){
+		double x, y;
+		x = this.points.get(0).getX() - this.points.get(1).getX();
+		y = this.points.get(0).getY() - this.points.get(1).getY();
+		return new Point(x, y);
+	}
+		
 	/*--------------------------------------------------------------------------*/
 	/* Méthodes */
 	/*--------------------------------------------------------------------------*/

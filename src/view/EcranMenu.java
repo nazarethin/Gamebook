@@ -7,11 +7,15 @@ import java.io.File;
 import javax.swing.BorderFactory;
 import javax.swing.border.EmptyBorder;
 
+import view.kk.*;
+import kk.calcul.*;
+import kk.*;
+
 public class EcranMenu extends JPanel implements ActionListener {
 
 	private Menu frame;
 	private JButton jouerB = new JButton("Jouer");
-	private JButton graphB = new JButton("Graphique");
+	private JButton graphB = new JButton("Graphe");
 	private JButton metriqueB = new JButton("Métrique");
 	private Image img_background;
 
@@ -49,13 +53,6 @@ public class EcranMenu extends JPanel implements ActionListener {
 
 		this.add(content);
 		this.revalidate();
-
-		/*
-		File f = new File("images");
-		System.out.println("Chemin absolu : " + f.getAbsolutePath());
-		System.out.println(f.exists());
-		*/
-
 	}
 
 	@Override
@@ -68,15 +65,13 @@ public class EcranMenu extends JPanel implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		Object source = e.getSource();
 		if (source == jouerB) {
-			System.out.println("Lancer jeu");
-			this.frame.set(new EcranChoixLivre(frame, this));
+			this.frame.set(new EcranChoixLivre(frame, this, "livre"));
 
 		} else if (source == graphB) {
-			System.out.println("lancer graph");
-			this.frame.set(new EcranGraph(frame, this));
+			this.frame.set(new PanneauChoix(frame, this));
+			
 		} else if (source == metriqueB) {
-			System.out.println("lancer metrique");
-			this.frame.set(new EcranMetrique(frame, this));
+			this.frame.set(new EcranChoixLivre(frame, this, "metrique"));
 		}
 
 	}

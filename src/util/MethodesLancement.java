@@ -20,6 +20,7 @@ public class MethodesLancement extends ListenableModel {
 
     public MethodesLancement(Menu frame, EcranMenu menu, String format) {
         super();
+        this.monLecteur = monLecteur;
         this.frame = frame;
         this.menu = menu;
         this.pageActuelle = pageActuelle;
@@ -42,6 +43,11 @@ public class MethodesLancement extends ListenableModel {
         } else if (this.format == "txt") {
             this.monLecteur = new LecteurTxt("books/le-labyrinthe-de-la-mort.txt");
         }
+    }
+
+    public Lecteur getLecteur(){
+        chooseLecteur();
+        return this.monLecteur;
     }
 
     public void setPageActuelle(Page page) {
@@ -161,7 +167,6 @@ public class MethodesLancement extends ListenableModel {
         // createLecteur("books");
         // if (terminalMode()) {
         chooseLecteur();
-        // System.out.println(this.);
         createIntroPage();
         createCharacterPage();
         int numPage = 1;
@@ -174,8 +179,6 @@ public class MethodesLancement extends ListenableModel {
             setNbChoix(maPage.getChoix().size());
             fireChange();
             createChoix(maPage);
-            System.out.println("\navant set : " + getNbChoix());
-            System.out.println("\napres set : " + getNbChoix());
             if (maPage.modifieInventaire())
                 modifieInventaire(maPage);
             if (!this.monLecteur.statsToChange(maPage.getTexte(), maPage).isEmpty())
@@ -201,7 +204,6 @@ public class MethodesLancement extends ListenableModel {
     }
 
     public void setInputChoice(int choix) {
-        System.out.println("Choice Input = " + choix);
         this.inputChoice = choix;
     }
 
@@ -216,8 +218,7 @@ public class MethodesLancement extends ListenableModel {
     public Page createPage(int numSect) {
         Page maPage = monLecteur.createPage(numSect);
 
-        System.out.println(" ----------------------------\n|    Texte de la page " + maPage.getSection() + " :"
-                + "    | \n ----------------------------\n" + " \n" + maPage.getTexte());
+        //System.out.println(" ----------------------------\n|    Texte de la page " + maPage.getSection() + " :" + "    | \n ----------------------------\n" + " \n" + maPage.getTexte());
         return maPage;
     }
 
@@ -227,14 +228,13 @@ public class MethodesLancement extends ListenableModel {
 
     public void createChoix(Page maPage) {
         ArrayList<Choix> mesChoix = maPage.getChoix();
-        System.out.println("\n ------------------\n|      Choix : " + "    | \n ------------------"
-                + " \n");
+        //System.out.println("\n ------------------\n|      Choix : " + "    | \n ------------------"+ " \n");
         for (int i = 0; i < mesChoix.size(); i++) {
             if (mesChoix.get(i).getRequireAbility()) {
-                System.out.println("Rappel de vos compétences : " + this.mainCharacter.getKaiDisciplines() + "\n");
+                //System.out.println("Rappel de vos compétences : " + this.mainCharacter.getKaiDisciplines() + "\n");
             }
             int compt = i + 1;
-            System.out.println("-" + compt + " " + mesChoix.get(i).getIntitule());
+            //System.out.println("-" + compt + " " + mesChoix.get(i).getIntitule());
         }
         ;
     }
@@ -244,8 +244,7 @@ public class MethodesLancement extends ListenableModel {
         for (int i = 0; i < itemToAdd.size(); i++) {
             this.mainCharacter.addInventaire(itemToAdd.get(i));
         }
-        System.out
-                .println("Voici le nouveau contenu de votre inventaire : " + this.mainCharacter.getInventaire() + "\n");
+        //System.out.println("Voici le nouveau contenu de votre inventaire : " + this.mainCharacter.getInventaire() + "\n");
     }
 
     public void changeStats(Page maPage) {
@@ -255,15 +254,14 @@ public class MethodesLancement extends ListenableModel {
                 Integer valeur = entry.getKey();
                 String stat = entry.getValue();
                 this.mainCharacter.changeStats(stat, valeur);
-                System.out.println("La stat suivante : " + stat + " a été modifiée de " + valeur + "\n");
+                //System.out.println("La stat suivante : " + stat + " a été modifiée de " + valeur + "\n");
             }
         }
     }
 
     public void isFight(Page maPage) {
         ArrayList<Choix> mesChoix = maPage.getChoix();
-        System.out.println("Voici vos compétences : \nHabileté :" + this.mainCharacter.getCombatSkill()
-                + "\nEndurance : " + mainCharacter.getCombatSkill() + "\n");
+        //System.out.println("Voici vos compétences : \nHabileté :" + this.mainCharacter.getCombatSkill() + "\nEndurance : " + mainCharacter.getCombatSkill() + "\n");
         for (int i = 0; i < mesChoix.size(); i++) {
 
             int compt = i + 1;

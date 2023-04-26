@@ -32,10 +32,8 @@ public class GameControlleur implements Listener {
 
     @Override
     public void update(Object o) {
-        System.out.println("Update gamecontrolleur");
         this.pageActuelle = launcher.getPageActuelle();
         this.nbChoix = launcher.getNbChoix();
         ecranJeu.setNbChoix(this.nbChoix);
-        System.out.println("getter" + ecranJeu.getNbChoix());
     }
 }

@@ -3,11 +3,10 @@
  * @author LARRIVAIN Daphne 22112005
  */
 
-package kk.gui;
+package view.kk;
 
 import kk.geometrie.Point;
 import kk.geometrie.Segment;
-import kk.gui.components.Boule;
 
 import java.awt.*; 
 import javax.swing.*;
@@ -24,7 +23,6 @@ public class VuePoint extends JPanel{
 
 	public VuePoint(Point p, int diam){
 		super(new GridLayout(2, 1));	
-		//super.setLayout(new BoxLayout(this, BoxLayout.PAGE_AXIS));
 		this.DIAM = diam;
 		this.point = p;
 		this.boule = new Boule(DIAM);
@@ -47,8 +45,9 @@ public class VuePoint extends JPanel{
 	public int diam(){
 		return this.DIAM;
 	}
+	
 	public int height(){
-		return this.DIAM*2;
+		return (this.DIAM*2)+2;
 	}
 	
 	public ArrayList<Segment> getSeg(){

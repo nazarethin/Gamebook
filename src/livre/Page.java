@@ -3,9 +3,11 @@ package livre;
 import java.util.ArrayList;
 
 public class Page {
+    private int id;
     private int section;
     private String texte;
     private ArrayList<Choix> choix;
+    private ArrayList<Page> livre;
     private boolean goodEnding;
     private boolean isFight;
     private boolean modifieInventaire;
@@ -18,6 +20,8 @@ public class Page {
         this.isFight = false;
         this.modifieInventaire = false;
         this.modifieStats = false;
+        this.id=id;
+        this.livre = livre;
     }
 
     public int getSection() {
@@ -28,8 +32,15 @@ public class Page {
         return this.texte;
     }
 
+    public int getNumeroPage(){
+        return this.id;
+    }
+
     public ArrayList<Choix> getChoix() {
         return this.choix;
+    }
+    public boolean hasChoix(Choix c) {
+        return choix.contains(c);
     }
 
     public void ajouterChoix(Choix monChoix) {
