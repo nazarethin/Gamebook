@@ -40,7 +40,6 @@ public class EcranChoixLivre extends JPanel implements ActionListener {
         title.setFont(new Font("Arial", Font.BOLD, 50));
 
         EcranMenu.createEmptySpace(-75, title, "left");
-        // Sert a décaler le titre vers la gauche pour le "recentrer"
 
         headerPanel.add(retourB, BorderLayout.WEST);
         headerPanel.add(title, BorderLayout.CENTER);

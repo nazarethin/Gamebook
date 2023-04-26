@@ -32,8 +32,7 @@ public class EcranFin extends JPanel implements ActionListener {
         // Pannel du contenu
         JPanel contentPanel = new JPanel();
         contentPanel.setOpaque(false);
-        contentPanel.setPreferredSize(new Dimension(400, 250)); // Dimension ajustable choisir de maniere arbitraire
-        // contentPanel.setBorder(BorderFactory.createLineBorder(Color.black));
+        contentPanel.setPreferredSize(new Dimension(400, 250)); 
         JLabel endLabel = new JLabel("<html><font color='CC0000'>Felicitations</font></html>", SwingConstants.CENTER);
         endLabel.setFont(new Font("Arial", Font.BOLD, 80));
         JLabel commentaire = new JLabel(

@@ -19,18 +19,9 @@ public class EcranJeu extends JPanel implements ActionListener, Listener {
 	private EcranMenu menu;
 	private int nbChoix;
 	private JButton retourB = new JButton("Retour");
-	/*
-	 *
-	 * private JButton choix1 = new JButton();*
-	 * private JButton choix2 = new JButton();*
-	 * private JButton choix3 = new JButton();*
-	 * private JButton choix4 = new JButton();
-	 */
-	// private String texte;
+
 	private JTextArea texteArea = new JTextArea(0, 20);
 
-	// private int width = (int)
-	// Toolkit.getDefaultToolkit().getScreenSize().getWidth();
 
 	public EcranJeu(Menu frame, EcranMenu menu, String format, int nbChoix) {
 		super(new BorderLayout());
@@ -50,25 +41,11 @@ public class EcranJeu extends JPanel implements ActionListener, Listener {
 		retourB.setPreferredSize(new Dimension(100, 50));
 		retourB.addActionListener(this);
 
-		/*
-		 * choix1.setPreferredSize(new Dimension(100, 50));
-		 * choix1.addActionListener(this);
-		 * 
-		 * choix2.setPreferredSize(new Dimension(100, 50));
-		 * choix2.addActionListener(this);
-		 * 
-		 * choix3.setPreferredSize(new Dimension(100, 50));
-		 * choix3.addActionListener(this);
-		 * 
-		 * choix4.setPreferredSize(new Dimension(100, 50));
-		 * choix4.addActionListener(this);
-		 */
 		JLabel title = new JLabel("<html><font color='CC0000'>Livre dont vous etes le heros</font></html>",
 				SwingConstants.CENTER);
 		title.setFont(new Font("Arial", Font.BOLD, 50));
 
 		EcranMenu.createEmptySpace(-75, title, "left");
-		// Sert a décaler le titre vers la gauche pour le "recentrer"
 
 		headerPanel.add(retourB, BorderLayout.WEST);
 		headerPanel.add(title, BorderLayout.CENTER);
@@ -76,8 +53,7 @@ public class EcranJeu extends JPanel implements ActionListener, Listener {
 		// Pannel du contenu
 		JPanel contentPanel = new JPanel();
 		contentPanel.setOpaque(false);
-		contentPanel.setPreferredSize(new Dimension(400, 250)); // Dimension ajustable choisir de maniere arbitraire
-		// contentPanel.setBorder(BorderFactory.createLineBorder(Color.black));
+		contentPanel.setPreferredSize(new Dimension(400, 250)); 
 
 		JPanel jeuP = new JPanel();
 
@@ -92,7 +68,6 @@ public class EcranJeu extends JPanel implements ActionListener, Listener {
 
 		JPanel choixP = new JPanel();
 		choixP.setLayout(new BoxLayout(choixP, BoxLayout.LINE_AXIS));
-		// choixP.setBorder(BorderFactory.createLineBorder(Color.black));
 		choixP.setAlignmentX(Component.CENTER_ALIGNMENT);
 		choixP.setPreferredSize(new Dimension(800, 50));
 		choixP.setOpaque(false);
@@ -104,7 +79,7 @@ public class EcranJeu extends JPanel implements ActionListener, Listener {
 
 		this.add(headerPanel, BorderLayout.NORTH);
 		this.add(contentPanel, BorderLayout.CENTER);
-		// this.revalidate();
+		this.revalidate();
 		// lancerJeu();
 
 	}
@@ -129,7 +104,6 @@ public class EcranJeu extends JPanel implements ActionListener, Listener {
 	public void update(Object o) {
 		this.launcher = (MethodesLancement) o;
 		Page pageActuelle = this.launcher.getPageActuelle();
-		//System.out.println("nbChoix = " + this.nbChoix);
 		String texte = pageActuelle.getTexte();
 		this.texteArea.setText(texte);
 		this.texteArea.setFont(new Font("Arial", Font.PLAIN, 20));
@@ -153,7 +127,6 @@ public class EcranJeu extends JPanel implements ActionListener, Listener {
 			final int index = i;
 			button.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
-					//System.out.println("Choix " + index + 1);
 					launcher.setInputChoice(index);
 				}
 			});
