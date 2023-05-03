@@ -1,0 +1,17 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{Stockage des données et convertisseurs}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Stockage du livre}{5}{0}{2}
+\beamer@subsectionintoc {2}{2}{Convertisseurs JSON et TXT}{6}{0}{2}
+\beamer@sectionintoc {3}{Les calculs métrique}{7}{0}{3}
+\beamer@subsectionintoc {3}{1}{Algorithmes utilisés}{8}{0}{3}
+\beamer@subsectionintoc {3}{2}{Agrégation de données}{9}{0}{3}
+\beamer@subsectionintoc {3}{3}{Résultats obtenus}{11}{0}{3}
+\beamer@sectionintoc {4}{Graphe}{14}{0}{4}
+\beamer@subsectionintoc {4}{1}{Kamada Kawai}{15}{0}{4}
+\beamer@subsectionintoc {4}{2}{Interface graphique}{16}{0}{4}
+\beamer@subsectionintoc {4}{3}{Exemple d'application}{17}{0}{4}
+\beamer@sectionintoc {5}{L'interface graphique}{18}{0}{5}
+\beamer@subsectionintoc {5}{1}{Charte Graphique}{19}{0}{5}
+\beamer@subsectionintoc {5}{2}{Interface de jeu}{20}{0}{5}
+\beamer@sectionintoc {6}{Conclusion}{21}{0}{6}
